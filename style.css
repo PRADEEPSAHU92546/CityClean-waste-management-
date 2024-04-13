@@ -916,10 +916,6 @@ video {
     height: 75vh;
   }
 
-  .md\:h-\[90vh\] {
-    height: 90vh;
-  }
-
   .md\:min-h-fit {
     min-height: -moz-fit-content;
     min-height: fit-content;
