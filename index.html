@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="./asset/logo.jpg" />
+    <title>CBPS Admission</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font -->
+    <script
+      src="https://kit.fontawesome.com/3b998c155f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .right-sign li {
+        list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23710071"><path d="M9 19c-.26 0-.51-.1-.71-.29l-6-6A.996.996 0 1 1 3.7 11.3l5.29 5.29L20.28 5.3a.996.996 0 1 1 1.41 1.41l-12 12c-.2.2-.45.29-.71.29Z"></path></svg>');
+      }
+      .right-sign li::marker {
+        font-size: 2.5em;
+      }
+      .to-top {
+        background-color: gray;
+        color: white;
+        position: fixed;
+        bottom: 16px;
+        right: 25px;
+        width: 50px;
+        height: 50px;
+        border-radius: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        text-decoration: none;
+        opacity: 1;
+        transition: all 0.4s;
+      }
+      @media only screen and (max-width: 600px) {
+        .to-top {
+        background-color: gray;
+        color: white;
+        position: fixed;
+        bottom: 16px;
+        right: 20px;
+        width: 30px;
+        height: 30px;
+        border-radius: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        text-decoration: none;
+        opacity: 1;
+        transition: all 0.4s;
+      }
+}
+    </style>
+  </head>
+  <body class="font-serif">
+    <header id="home" class="bg-white">
+      <nav class="flex justify-between items-center w-[92%] mx-auto">
+        <div class="">
+          <img class="w-40" src="./asset/logo.jpg" alt="" />
+        </div>
+        <div
+          class="nav-links md:static absolute bg-white md:min-h-fit min-h-[30vh] left-0 top-[-100%] md:w-auto w-full flex items-center md:px-4 md:py-0 px-6 py-2"
+        >
+          <ul
+            class="flex md:flex-row flex-col md:items-center md:gap-[3vw] md:text-[18px] text-[16px] gap-5 md:font-serif font-thin text"
+          >
+            <li>
+              <a class="hover:text-gray-500" href="#home">HOME</a>
+            </li>
+            <li>
+              <a class="hover:text-gray-500" href="#About">ABOUT</a>
+            </li>
+            <li>
+              <a class="hover:text-gray-500" href="#">SERVICES</a>
+            </li>
+            <li>
+              <a class="hover:text-gray-500" href="#">FAQ</a>
+            </li>
+            <li>
+              <a class="hover:text-gray-500" href="#">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex items-center gap-3">
+          <ion-icon
+            onclick="onToggleMenu(this)"
+            name="menu"
+            class="text-3xl cursor-pointer md:hidden"
+          ></ion-icon>
+        </div>
+      </nav>
+    </header>
+    <!-- b.tech inline drop -->
+    <div
+      class="bg-black text-white flex justify-between items-center h-10 md:hidden"
+    >
+      <a
+        href="#"
+        class="bg-purple-950 w-[49.8%] text-center h-12 pt-2 text-[18px] hover:text-gray-300"
+        >B.Tech-MBA</a
+      >
+      <a
+        href="#"
+        class="bg-purple-950 w-[49.8%] text-center h-12 pt-2 text-[18px] hover:text-gray-300"
+        >Consultant</a
+      >
+    </div>
+
+    <!-- hero -->
+    <div class="h-[1vh] bg-gradient-to-t from-[gray] to-[white]"></div>
+    <div class="bg-gradient-to-t from-[#b0d7ee] to-[white]">
+      <img
+        src="./asset/Slide3.jpg"
+        alt=""
+        class="md:h-[75vh] Md:w-[85%] xl:h-[80vh] 2xl:h-[75vh] md:p-0 p-1 h-[30vh] w-[95%]"
+        style="display: block; margin-left: auto; margin-right: auto"
+      />
+    </div>
+    <!-- book online -->
+
+    <!-- desc -->
+    <section class="bg-gradient-to-t from-[#b9dfe8] to-[white] grid">
+      <!-- About -->
+      <div id="About" class="md:h-[102vh] h-auto md:mx-14 grid md:grid-cols-2">
+        <div class="md:p-10 p-4 md:h-[100vh] h-auto md:overflow-hidden">
+          <h1
+            class="pt-10 md:pt-6 text-center md:text-left md:text-[220%] sm:text-[150%]"
+            style="font-weight: bolder"
+          >
+            About Us
+          </h1>
+          <h2
+            class="text-center font-extralight md:text-left md:text-[120%] text-[150%] pt-6 pb-6"
+          >
+            Student Support Services and Assistance
+          </h2>
+          <p class="md:text-[100%] text-[100%] leading-6 break-words">
+            CBPS Academy Rourkela
+            <a href="#" class="font-semibold text-[#140978]"> ISO Certified</a>
+            independent career counselling centres at the suburb of Rourkela,
+            incepted from the year 2014 the primary objective of cbps academy
+            Rourkela is to emerge as a career counselling centre to understand
+            the needs of the students who want to pursue the career with proper
+            planning and execution. Education is one of the most unplanned
+            activities today, however, some career counselling centres brought
+            changes in this field by motivating students to pursue the right
+            career and courses with careful planning and execution.
+          </p>
+
+          <p class="pt-4 md:text-[100%] text-[100%] leading-6">
+            CBPS Academy Rourkela is successful in this effort by motivating
+            students in completing their incomplete education. We at CBPS
+            Academy Rourkela made it possible to understand the needs of dropped
+            and discontinued students. We also help Housewives, Working
+            professionals in understanding their educational needs and
+            accordingly help in choosing the right kind of courses to help them
+            have a Bright career ahead.
+          </p>
+
+          <p class="pt-6 md:pt-8 md:text-[100%] text-[100%] leading-6">
+            Our Services are customized and suitable for different students, we
+            understand different needs of the different students and accordingly
+            help them in choosing the courses and we ensure in their journey
+            from admission to examinations.
+          </p>
+        </div>
+        <div
+          class="xl:h-[90vh] h-auto overflow-hidden content-center md:mt-20 md:pt-0"
+        >
+          <img
+            src="./asset/college_student.jpg"
+            alt="students_img"
+            class="md:px-10 md:py-10 md:h-[100%] h-[75%] mx-auto"
+            style="border-radius: 16%"
+          />
+        </div>
+      </div>
+      <!-- who we are -->
+      <section class="h-auto md:mx-14 md:p-10 p-6">
+        <h1
+          class="md:pt-10 text-center md:text-[250%] text-[150%]"
+          style="font-weight: bolder"
+        >
+          Who We Are?
+        </h1>
+        <p
+          class="md:text-[100%] text-[100%] pt-6 md:leading-7 leading-6 break-all"
+        >
+          Cbps Academy Rourkela is one of the oldest Educational consulting and
+          Career Guidance Center. Backed with Well Qualified Professionals, Who
+          have immense Experience in Academic domain in the felids of Career
+          Guidance, Academic Consulting and Student services. It is well lead by
+          domain specialists. We are Govt approved Enterprise Registered with
+          <span class="font-bold">MSME</span> (Ministry of Micro, Small & Medium
+          Enterprises) Bearing Registration No -
+        </p>
+        <p class="md:text-[100%] text-[100%] pt-4 md:leading-7 leading-6">
+          At Cbps Academy Rourkela We undertake some important academic
+          functions which are very essential in selecting the Right Subjects
+          along with Right Boards or universities. Our Basic function is to
+          focus on following students :
+        </p>
+        <ul
+          class="right-sign pl-5 text-[100%] pt-2 md:leading-5 leading-6 font-medium tracking-[0.1em]"
+        >
+          <li>Dropped and Discontinued Students</li>
+          <li>House wives</li>
+          <li>Working Professionals</li>
+        </ul>
+
+        <h2 class="font-bold md:text-[120%] text-[100%] tracking-[0.25em] pt-6">
+          <span class="text-yellow-600">[</span> Our Basic Functions Includes
+          Student Support Functions They Include:
+          <span class="text-yellow-600">]</span>
+        </h2>
+        <ul
+          class="right-sign p-5 md:text-[100%] text-[100%] pt-4 md:leading-5 leading-6 font-medium tracking-[0.1em]"
+        >
+          <li>Admission or Registration support in Boards and Universities</li>
+          <li>Guidance on Course ware and Syllabus</li>
+          <li>Examination Preparatory Materials</li>
+          <li>Guidance on Practical's</li>
+        </ul>
+
+        <h2 class="font-bold md:text-[120%] tracking-[0.25em] pt-6">
+          Our Core Areas Of Courses :
+        </h2>
+        <ul
+          class="right-sign pl-5 md:text-[100%] text-[100%] pt-4 md:leading-5 leading-6 font-medium tracking-[0.1em]"
+        >
+          <li>
+            CLASS X - For Dropped Students from Open Schools like CBPS, NIOS
+          </li>
+          <li>
+            CLASS XII - For Dropped Students from Open Schools like CBPS, COBSE,
+            CG SOS, BBOSE
+          </li>
+          <li>Graduation Courses - BA, BCOM, BSC, BBA, BCA, BSW</li>
+          <li>Post-Graduation Courses - MA, MCOM, MSC, MBA, MCA, MSW</li>
+          <li>
+            Technical Courses - DIPLOMA (All trades Civil, Mechanical,
+            Electcicals, CS, IT)
+          </li>
+          <li>
+            B.Tech Courses - BTECH (Mechanical, Electricals, Computer Science,
+            IT)
+          </li>
+        </ul>
+
+        <h2 class="font-bold md:text-[120%] tracking-[0.25em] pt-8">
+          Distance Mode/Regular Mode:
+        </h2>
+        <p
+          class="md:text-[100%] text-[100%] pt-4 md:leading-7 leading-6 tracking-wide"
+        >
+          At CBPS Academy Rourkela we understand the need of the students and
+          based on the need and requirements we help the students in choosing
+          the Mode of courses (Regular Mode/Distance Mode)
+        </p>
+      </section>
+    </section>
+    <!-- courses we offer -->
+    <!-- Back to top bottom-->
+    <a href="#home" class="to-top">
+      <i class="fa-solid fa-arrow-up"></i>
+    
+
+    <script src="./main.js"></script>
+  </body>
+</html>
