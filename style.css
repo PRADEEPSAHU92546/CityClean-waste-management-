@@ -1438,6 +1438,10 @@ video {
   .md\:leading-7 {
     line-height: 1.75rem;
   }
+
+  .md\:leading-6 {
+    line-height: 1.5rem;
+  }
 }
 
 @media (min-width: 1280px) {
