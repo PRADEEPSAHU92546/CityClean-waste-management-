@@ -1138,6 +1138,14 @@ video {
   font-size: 80%;
 }
 
+.text-\[90\%\] {
+  font-size: 90%;
+}
+
+.text-\[0\%\] {
+  font-size: 0%;
+}
+
 .font-bold {
   font-weight: 700;
 }
