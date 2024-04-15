@@ -47,6 +47,28 @@
         opacity: 1;
         transition: all 0.4s;
       }
+      .coursesdg h1::after {
+        content: '';
+        margin-top: 6px;
+        margin-left: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 2px;
+        background-color: black;
+        transform: scale(1,1);
+        transition: transform 1s ease-in-out;
+      }
+      .container1{
+        background-image: linear-gradient(-60deg, #9fdff6 20%,white,#9fdff6 80%); 
+        height: 605px;
+        width: 100%;
+        border-radius: 2%;
+        object-fit: cover;
+      } 
+    
+
       @media only screen and (max-width: 600px) {
         .to-top {
         background-color: gray;
@@ -65,7 +87,26 @@
         opacity: 1;
         transition: all 0.4s;
       }
-     }
+      .coursesdg h1::after {
+        content: '';
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 2px;
+        background-color: black;
+        transition: transform 0.2s ease-in-out;
+        transform: scale(0);
+      }
+      .container1{
+        background-image: linear-gradient(-60deg, #9fdff6 20%,white,#9fdff6 80%); 
+        height: 660px;
+        width: 100%;
+        border-radius: 2%;
+        object-fit: cover;
+      }
+    }
 
     </style>
   </head>
@@ -88,13 +129,13 @@
               <a class="hover:text-gray-500" href="#About">ABOUT</a>
             </li>
             <li>
-              <a class="hover:text-gray-500" href="#">SERVICES</a>
+              <a class="hover:text-gray-500" href="#services">SERVICES</a>
             </li>
             <li>
-              <a class="hover:text-gray-500" href="#">FAQ</a>
+              <a class="hover:text-gray-500" href="#FAQ">FAQ</a>
             </li>
             <li>
-              <a class="hover:text-gray-500" href="#">CONTACT</a>
+              <a class="hover:text-gray-500" href="#contact">CONTACT</a>
             </li>
           </ul>
         </div>
@@ -136,7 +177,7 @@
     <!-- book online -->
 
     <!-- desc -->
-    <section class="bg-gradient-to-t from-[#b9dfe8] to-[white]">
+    <section class="bg-gradient-to-t from-[#dce7ea] to-[white]">
       <!-- About -->
       <div id="About" class="md:h-[102vh] h-auto md:mx-14 grid md:grid-cols-2">
         <div class="md:p-10 p-4 md:h-[100vh] h-auto md:overflow-hidden">
@@ -277,11 +318,63 @@
       </section>
     </section>
     <!-- courses we offer -->
+    <section id="services" class="bg-gradient-to-t from-[#dce7ea] to-[white]">
+      <div class="coursesdg flex justify-center items-center  pt-10"><h1 class="md:text-[250%] text-[180%] font-extrabold tracking-widest">Courses We Offer </h1></div>
+
+      <div class="flex justify-center items-center pt-10 h-auto mx-auto">
+        <ul class="grid md:grid-cols-2 grid-rows-1  md:gap-36">
+          <li><img src="./asset/classroom.jpg" alt="image" class="rounded md:h-[100%] md:mx-0 h-[95%] mx-auto"></li>
+          <li><img src="./asset/classroom_withTeacher.jpg" alt="image" class="rounded hidden sm:block"></li>
+        </ul>
+      </div>
+      <!-- courses details -->
+      <div class="">
+        <div class="flex justify-center items-center md:flex-row flex-col gap-8 pt-10 md:px-28 px-4">
+          <div class="container1 px-4 overflow-hidden">
+            <h1 class="font-extrabold pt-[10px] flex justify-center items-center md:text-[150%] text-[130%] tracking-widest">CLASS X</h1>
+            <h2 class="font-bold pt-3 tracking-wider md:text-[100%] text-[80%]">Are you a Discontinued Student?
+            </h2>
+            <h2 class="font-bold pt-3 tracking-wider  md:text-[100%] text-[80%]">Are You a Dropped Student?</h2>
+            <h2 class="font-bold pt-3 tracking-wider  md:text-[100%] text-[80%]">Do you want to improve your Class X Grades?</h2>
+            <p class="text-[100%] font-extralight pt-6 tracking-wide leading-6">You can contact our counselling center for enrollment in Class X or Matriculation from Open schooling system like Nios (National Institute of Open Schooling) , BBOSE (Bihar Board of Open Schooling Patna) BOSSE (Board of Open Schooling and Skill Education), the certificates issued by these Boards are equivalent to CBSE, ICSE, And IGCSE, and OR State Boards.</p>
+            <p class="text-[100%] font-extralight pt-6 tracking-wide leading-6 ">The above are most reputed open schools in India We at cbps Academy Rourkela help you in completing Class X or Matriculation.
+            </p>
+            <h2 class="pt-2 tracking-wide  md:text-[100%] text-[80%]"><span class="font-bold">Visit us today or Call or Email us at</span> <span class="text-[#de1bc4]"> 9078678382</span> or <span class="text-[#de1bc4]">cbsprourkela@gmail.com</span></h2>
+            <h2 class="font-bold pt-2 tracking-wide  md:text-[100%] text-[80%]">Documents Required for Enrollment in Class X</h2>
+            <ul class="leading-7 list-disc pl-4">
+              <li class="">Aadhar</li>
+              <li class="">Birth Certificate</li>
+              <li class="">TC Issued from Last class</li>
+            </ul>
+          </div>
+          <div class="container1 px-4 overflow-hidden">
+            <h1 class="font-extrabold pt-[10px] flex justify-center items-center md:text-[150%] text-[130%] tracking-widest">CLASS XII</h1>
+            <h2 class="font-bold pt-3 tracking-wider md:text-[100%] text-[80%]">Are you a Discontinued Student?
+            </h2>
+            <h2 class="font-bold pt-3 tracking-wider  md:text-[100%] text-[80%]">Are You a Dropped Student?</h2>
+            <h2 class="font-bold pt-3 tracking-wider  md:text-[100%] text-[80%]">Do you want to improve your Class XII Grades?</h2>
+            <p class="text-[100%] font-extralight pt-6 tracking-wide leading-6">You can contact our counselling center for enrollment in Class X or Matriculation from Open schooling system like Nios (National Institute of Open Schooling) BBOSE (Bihar Board of Open Schooling Patna) BOSSE (Board of Open Schooling and Skill Education), the certificates issued by these Boards are equivalent to CBSE, ICSE, And IGCSE, and OR State Boards..</p>
+            <p class="text-[100%] font-extralight pt-6 tracking-wide leading-6 ">The above are most reputed open schools in India We at Cbps Academy Rourkela help you in completing Class X or Matriculation.
+            </p>
+            <h2 class="pt-2 tracking-wide  md:text-[100%] text-[80%]"><span class="font-bold">Visit us today or Call us or Email at</span> <span class="text-[#de1bc4]"> 9078678382</span> or <span class="text-[#de1bc4]">cbsprourkela@gmail.com</span></h2>
+            <h2 class="font-bold pt-2 tracking-wide  md:text-[100%] text-[80%]">Documents Required for Enrollment in Class X</h2>
+            <ul class="leading-7 list-disc pl-4">
+              <li class="">Aadhar</li>
+              <li class="">Birth Certificate</li>
+              <li class="">Class X Mark sheet/Certificate</li>
+              <li class="">TC issued from Class X</li>
+          </div>
+        </div>
+
+        <!-- container2 -->
+        <div class="h-40 flex justify-center items-center content-center pt-16">
+          <h1 class="bg-green-700 text-white ">work Going on</h1>
+        </div>
+      </div>
+    </section>
     <!-- Back to top bottom-->
     <a href="#home" class="to-top">
-      <i class="fa-solid fa-arrow-up"></i>
-    
-
+      <i class="fa-solid fa-arrow-up"></i></a>
     <script src="./main.js"></script>
   </body>
 </html>
