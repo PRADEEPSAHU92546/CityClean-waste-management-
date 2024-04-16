@@ -1362,6 +1362,10 @@ video {
   color: rgb(202 138 4 / var(--tw-text-opacity));
 }
 
+.text-\[100\%\%\] {
+  color: 100%%;
+}
+
 .underline {
   text-decoration-line: underline;
 }
