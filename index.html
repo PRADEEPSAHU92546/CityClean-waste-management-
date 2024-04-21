@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="image/x-icon" href="./asset/logo.jpg" />
-    <title>CBPS Admission Now</title>
+    <title>CBPS Admission Rourkela - Open Admission Now</title>
     <link rel="stylesheet" href="style.css" />
     <!-- google lens -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <!-- Font -->
     <script
       src="https://kit.fontawesome.com/3b998c155f.js"
@@ -34,6 +35,16 @@
       .right-sign li::marker {
         font-size: 2.5em;
       }
+      .merriweather-regular {
+      font-family: "Merriweather", serif;
+      font-weight: 400;
+      font-style: normal;
+      }
+      .merriweather-light {
+      font-family: "Merriweather", serif;
+      font-weight: 300;
+      font-style: normal;
+      }
       .roboto-regular {
       font-family: "Roboto", sans-serif;
       font-weight: 400;
@@ -43,6 +54,16 @@
       font-family: "Roboto", sans-serif;
       font-weight: 500;
       font-style: normal;
+      }
+      .containerbook{
+        width: 100%;
+        object-fit: cover;
+        height: 52vh;
+      }
+      .btn-ctr1{
+        display: flex;
+        justify-content: center;
+        align-content: center;
       }
       .to-top {
         background-color: gray;
@@ -74,22 +95,28 @@
         transform: scale(1,1);
         transition: transform 1s ease-in-out;
       }
-      .container1{
-        background-image: linear-gradient(-60deg, #9fdff6,white,#9fdff6 80%); 
+      .container{
+        background-image: linear-gradient(-60deg, #9fdff6,white,#9fdff6 80%);
+        width: 100%;
+        border-radius: 2%;
+        object-fit: cover;
+      }
+      .container1{ 
         height: 620px;
-        width: 100%;
-        border-radius: 2%;
-        object-fit: cover;
       } 
-      .container2{
-        background-image: linear-gradient(-60deg, #9fdff6 20%,white,#9fdff6 80%); 
+      .container2{ 
         height: 325px;
-        width: 100%;
-        border-radius: 2%;
-        object-fit: cover;
       } 
-    
+      .container3{ 
+        height: 300px;
+      }
 
+      /* test */
+      
+       
+      
+      
+      
       @media only screen and (max-width: 600px) {
         .to-top {
         background-color: gray;
@@ -110,23 +137,23 @@
       }
       
       .container1{
-        background-image: linear-gradient(-60deg, #9fdff6 20%,white,#9fdff6 80%); 
         height: auto;
-        width: 100%;
-        border-radius: 2%;
-        object-fit: cover;
       }
       .container2{
-        background-image: linear-gradient(-60deg, #9fdff6 20%,white,#9fdff6 80%); 
         height: auto;
-        width: 100%;
-        border-radius: 2%;
-        object-fit: cover;
+      }
+      .container3{
+        height: auto;
       }
       .btn-ctr{
         display: flex;
         justify-content: center;
         align-content: center;
+      }
+      .containerbook{
+        width: 90%;
+        object-fit: cover;
+        height: auto;
       }
     }
 
@@ -135,11 +162,11 @@
   <body class="font-serif">
     <header id="home" class="bg-white">
       <nav class="flex justify-between items-center w-[92%] h-auto mx-auto">
-        <div class="">
+        <div class="h-auto">
           <img class="w-40" src="./asset/logo.jpg" alt="" />
         </div>
         <div
-          class="nav-links md:static absolute bg-white md:min-h-fit min-h-[30vh] left-0 top-[-100%] md:w-auto w-full flex items-center md:px-4 md:py-0 px-6 py-2 "
+          class="nav-links md:static absolute bg-white md:min-h-fit min-h-[30vh] left-0 top-[-100%] md:w-auto w-full flex items-center md:px-4 md:py-0 px-6 py-2"
         >
           <ul
             class="flex md:flex-row flex-col md:items-center md:gap-[3vw] md:text-[18px] text-[16px] gap-5 md:font-serif font-medium"
@@ -192,17 +219,51 @@
       <img
         src="./asset/Slide3.jpg"
         alt=""
-        class="md:h-[75vh] Md:w-[85%] xl:h-[80vh] 2xl:h-[75vh] md:p-0 p-1 h-[30vh] w-[95%]"
+        class="md:h-[75%] Md:w-[85%] xl:h-[80vh] 2xl:h-[75vh] md:p-0 p-1 h-auto w-[95%]"
         style="display: block; margin-left: auto; margin-right: auto"
       />
     </div>
-    <!-- book online -->
+    <!-- carousel -->
+   
+    
+    
+  <!-- book online -->
+    <div class="h-full  bg-gray-200 flex justify-center items-center md:flex-row flex-col box-content  object-cover xl:gap-20 gap-12 md:py-10 py-6  md:mt-5 mt-4 md:mx-8 mx-2 bg-cover">
+      <div class="containerbook bg-white lg:mx-16">
+        <div class="box-content object-cover">
+            <a href="#" class="flex justify-center content-center pt-8 underline text-blue-600 hover:text-blue-800 visited:text-purple-600 md:text-[120%] tracking-wide pb-1">An iso Certified Institutions</a>
+          <h1 class="flex justify-center line-clamp-3 items-center merriweather-regular tracking-wide md:text-[175%] text-[155%] md:pb-20 pb-10">
+          Are You A Student
+          </h1>
+          <h2 class="flex justify-center merriweather-light text-[86%] pb-3 text-center">
+          CBPS 12 Admission Open, Hurry Up Now!
+           </h2>
+           <div class="btn-ctr1 pb-6"><button class=" bg-[#0f155b] text-white px-6 py-2  rounded-3xl hover:bg-blue-800">Book online</button></div>
+          
+          </div>
+        </div>
+        <div class="containerbook bg-white lg:mx-16">
+          <div class="box-content object-cover px-4">
+              <a href="#" class="flex justify-center content-center pt-8 underline text-blue-600 hover:text-blue-800 visited:text-purple-600 md:text-[120%] tracking-wide pb-1">An iso Certified Institutions</a>
+            <h1 class="flex justify-center text-center merriweather-regular tracking-wide md:text-[175%] text-[155%] md:pb-12 pb-10">
+              Are You An Educational Consultant
+            </h1>
+            <h2 class="flex justify-center merriweather-light text-[86%] pb-3 text-center">
+            CBPS 12 Admission Open, Hurry Up Now!
+             </h2>
+             <div class="btn-ctr1 pb-6"><button class=" bg-[#0f155b] text-white px-6 py-2  rounded-3xl hover:bg-blue-800">Book online</button></div>
+            
+            </div>
+          </div>
+      
+    </div>
+
 
     <!-- desc -->
     <section class="bg-gradient-to-t from-[#b7dde7] to-[white]">
       <!-- About -->
-      <div id="About" class="md:h-[102vh] h-auto md:mx-14 grid md:grid-cols-2">
-        <div class="md:p-10 p-4 md:h-[100vh] h-auto md:overflow-hidden">
+      <div id="About" class="md:h-[102vh] h-auto md:mx-14 grid md:grid-cols-2 md:overflow-hidden">
+        <div class="md:p-10 p-4 md:h-[100vh] h-auto">
           <h1
             class="pt-10 md:pt-6 text-center md:text-left md:text-[220%] sm:text-[150%]"
             style="font-weight: bolder"
@@ -238,19 +299,18 @@
           </p>
 
           <p class="pt-6 md:pt-8 md:text-[100%] text-[100%] leading-6">
-            Our Services are customized and suitable for different students, we
-            understand different needs of the different students and accordingly
-            help them in choosing the courses and we ensure in their journey
-            from admission to examinations.
+            Our Services are customized and suitable for different students, we <span class="md:hidden">understand different needs of the different students and accordingly
+              help them in choosing the courses and we ensure in their journey
+              from admission to examinations.</span>
           </p>
         </div>
         <div
-          class="xl:h-[90vh] h-auto overflow-hidden content-center md:mt-20 md:pt-0"
+          class="flex justify-center xl:h-auto h-auto overflow-hidden content-center md:mt-20 md:pt-0"
         >
           <img
             src="./asset/college_student.jpg"
             alt="students_img"
-            class="md:px-10 md:py-10 md:h-[100%] h-[75%] mx-auto"
+            class="md:px-10 md:py-10 md:h-[100%] h-auto px-6 mx-auto md:my-auto my-8"
             style="border-radius: 16%"
           />
         </div>
@@ -353,8 +413,8 @@
       <!-- container 1 -->
       <div class="">
         <div class="flex justify-center items-center md:flex-row flex-col gap-8 pt-10 md:px-28 px-4">
-          <div class="container1 px-4 overflow-hidden">
-            <h1 class="font-extrabold pt-[10px] flex justify-center items-center md:text-[140%] text-[130%] tracking-wider">CLASS X</h1>
+          <div class="container container1 px-4 overflow-hidden">
+            <h1 class="font-extrabold pt-[10px] flex justify-center items-center text-center md:text-[140%] text-[120%] tracking-wider">CLASS X</h1>
             <h2 class="font-bold pt-3 md:tracking-wider tracking-wide md:text-[100%] text-[90%]">Are you a Discontinued Student?
             </h2>
             <h2 class="font-bold pt-3 md:tracking-wider tracking-wide md:text-[100%] text-[90%]">Are You a Dropped Student?</h2>
@@ -370,8 +430,8 @@
               <li class="">TC Issued from Last class</li>
             </ul>
           </div>
-          <div class="container1 px-4 overflow-hidden">
-            <h1 class="font-extrabold pt-[10px] flex justify-center items-center md:text-[140%] text-[130%] tracking-wider">CLASS XII</h1>
+          <div class="container container1 px-4 overflow-hidden">
+            <h1 class="font-extrabold pt-[10px] flex justify-center items-center text-center md:text-[140%] text-[120%] tracking-wider">CLASS XII</h1>
             <h2 class="font-bold pt-3 md:tracking-wider tracking-wide md:text-[100%] text-[90%]">Are you a Discontinued Student?
             </h2>
             <h2 class="font-bold pt-3 md:tracking-wider tracking-wide  md:text-[100%] text-[90%]">Are You a Dropped Student?</h2>
@@ -391,16 +451,16 @@
 
         <!-- container2 -->
         <div class="flex justify-center items-center md:flex-row flex-col gap-8 pt-10 md:px-28 px-4">
-          <div class="container2 px-4 overflow-hidden">
-            <h1 class="font-extrabold pt-[10px] flex justify-center items-center md:text-[140%] text-[130%] tracking-wider">ARTS & HUMANITIES</h1>
+          <div class="container container2 px-4 overflow-hidden">
+            <h1 class="font-extrabold pt-[10px] flex justify-center items-center text-center md:text-[140%] text-[120%] tracking-wider">ARTS & HUMANITIES</h1>
             <p class="roboto-regular md:text-[100%] text-[100%] font-light md:pt-4 pt-3 tracking-wide md:leading-6 text-justify">Some of the Most Popular Conventional courses in Arts and Humanities offered by various Universities through Distance/Regular Mode Student can enroll in various specializations like:</p>
             <ul class="roboto-regular leading-7 list-disc pl-4 md:pb-2 pb-4 pt-6">
               <li class=""><span class="font-bold ">BA (Bachelors in Arts) : </span>Psychology, Economics, Political science, Sociology.</li>
               <li class=""><span class="font-bold">MA (Masters in Arts) : </span>Psychology, Economics, Political science, Sociology.</li>
             </ul>
           </div>
-          <div class="container2 px-4 overflow-hidden">
-            <h1 class="font-extrabold pt-[10px] flex justify-center items-center md:text-[140%] text-[130%] tracking-wider">SCHOOL OF SCIENCE</h1>
+          <div class="container container2 px-4 overflow-hidden">
+            <h1 class="font-extrabold pt-[10px] flex justify-center items-center text-center md:text-[140%] text-[120%] tracking-wider">SCHOOL OF SCIENCE</h1>
             <p class="md:text-[100%] text-[100%] roboto-regular md:pt-4 pt-3 tracking-wide md:leading-6 text-justify">Science refers to a system of acquiring knowledge based on scientific method. It is also an organized body of knowledge which has been gained through research. Its objective is to make human learn that how things work. Science has become an integral part of human life as it fulfills our day to day requirements. We at Nios Academy Rourkela  offer B.SC, M.SC and Ph.D. courses in various science subjects.</p>
             <ul class="roboto-regular leading-6 list-disc pl-4 md:pb-2 pb-4 pt-3 font-bold">
               <li>B.Sc</li>
@@ -412,8 +472,8 @@
 
         <!-- container 3 -->
         <div class="flex justify-center items-center md:flex-row flex-col gap-8 pt-10 md:px-28 px-4">
-          <div class="container2 px-4 overflow-hidden">
-            <h1 class="font-extrabold pt-[10px] flex justify-center items-center md:text-[140%] text-[130%] tracking-wider">COMMERCE & MANAGEMENT</h1>
+          <div class="container container3 px-4 overflow-hidden">
+            <h1 class="text-center flex justify-center items-center font-extrabold pt-[10px]  md:text-[140%] text-[120%] tracking-wider">COMMERCE & MANAGEMENT</h1>
             <p class="md:text-[100%] text-[100%] roboto-regular md:pt-4 pt-3 tracking-wide md:leading-6 text-justify">University programs in Commerce and Management in Both Regular and Distance mode are</p>
             <ul class="leading-7 list-disc pl-4 md:pb-2 pb-4 pt-6 roboto-regular">
               <li class="">Bachelor of Business Administration (BBA)</li>
@@ -421,8 +481,8 @@
               <li class="">Master's Degree and diploma in Business Administration (MBA)</li>
             </ul>
           </div>
-          <div class="container2 px-4 overflow-hidden">
-            <h1 class="font-extrabold pt-[10px] flex justify-center items-center md:text-[140%] text-[130%] tracking-wider">COMPUTER APPLICATION & IT</h1>
+          <div class="container container3 px-4 overflow-hidden">
+            <h1 class="font-extrabold pt-[10px] flex justify-center items-center text-center md:text-[140%] text-[120%] tracking-wider">COMPUTER APPLICATION & IT</h1>
             <p class="md:text-[100%] text-[100%] roboto-regular md:pt-4 pt-3 tracking-wide md:leading-6 text-justify">SIn computer science, the term, 'information' refers usually to information that is encoded in bits and bytes in computer memory. Courses offered are BCA, MCA, DCA, and PGDCA in Both Regular and Distance modes.</p>
             <ul class="leading-6 list-disc pl-4 md:pb-2 pb-4 pt-3 roboto-regular">
               <li>DCA</li>
