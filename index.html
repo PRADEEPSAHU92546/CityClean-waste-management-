@@ -3,15 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/x-icon" href="./asset/logo.jpg" />
-    <title>CBPS Admission Rourkela - Open Admission Now</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./asset/logo.png" />
+    <title>CITYSHINE-waste management services </title>
     <link rel="stylesheet" href="style.css" />
     <!-- google lens -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <!-- Font -->
+    <!-- validation source -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.5.2/ionicons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"></script>
+    
+    <!-- Font awesome -->
     <script
       src="https://kit.fontawesome.com/3b998c155f.js"
       crossorigin="anonymous"
@@ -110,12 +114,15 @@
       .container3{ 
         height: 300px;
       }
+      .responsive-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16%;
+    }
+    /*hidden for complaint form*/
+    .callhidden { display: none; }
 
       /* test */
-      
-       
-      
-      
       
       @media only screen and (max-width: 600px) {
         .to-top {
@@ -156,379 +163,356 @@
         height: auto;
       }
     }
+    .group:hover .group-hover\:block {
+       display: block;
+    }
+
+    .group-hover\:block {
+       display: none;
+    }
+    @media (min-width: 768px) and (max-width: 1279px) {
+        #slider .slide img {
+          height: 70vh;
+          width: 80%;
+        }
+      }
+    
+      @media (min-width: 1280px) {
+        #slider .slide img {
+          height: 75vh;
+          width: 85%;
+        }
+      }
 
     </style>
   </head>
   <body class="font-serif">
-    <header id="home" class="bg-white">
-      <nav class="flex justify-between items-center w-[92%] h-auto mx-auto">
-        <div class="h-auto">
-          <img class="w-40" src="./asset/logo.jpg" alt="" />
-        </div>
-        <div
-          class="nav-links md:static absolute bg-white md:min-h-fit min-h-[30vh] left-0 top-[-100%] md:w-auto w-full flex items-center md:px-4 md:py-0 px-6 py-2"
-        >
-          <ul
-            class="flex md:flex-row flex-col md:items-center md:gap-[3vw] md:text-[18px] text-[16px] gap-5 md:font-serif font-medium"
-          >
-            <li>
-              <a class="hover:text-gray-500" href="#home">HOME</a>
-            </li>
-            <li>
-              <a class="hover:text-gray-500" href="#About">ABOUT</a>
-            </li>
-            <li>
-              <a class="hover:text-gray-500" href="#services">SERVICES</a>
-            </li>
-            <li>
-              <a class="hover:text-gray-500" href="#FAQ">FAQ</a>
-            </li>
-            <li>
-              <a class="hover:text-gray-500" href="#contact">CONTACT</a>
-            </li>
-          </ul>
-        </div>
-        <div class="flex items-center gap-3">
-          <ion-icon
-            onclick="onToggleMenu(this)"
-            name="menu"
-            class="text-3xl cursor-pointer md:hidden"
-          ></ion-icon>
-        </div>
-      </nav>
-    </header>
-    <!-- b.tech inline drop -->
-    <div
-      class="bg-black text-white flex justify-between items-center h-10 md:hidden"
-    >
-      <a
-        href="#"
-        class="bg-purple-950 w-[49.8%] text-center h-12 pt-2 text-[18px] hover:text-gray-300"
-        >B.Tech-MBA</a
-      >
-      <a
-        href="#"
-        class="bg-purple-950 w-[49.8%] text-center h-12 pt-2 text-[18px] hover:text-gray-300"
-        >Consultant</a
-      >
+   <!-- Sign In Page -->
+<section id="signin-page" class="flex items-center justify-center min-h-screen bg-gray-200" style="display: none;">
+  <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+    <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+      <img class="mx-auto h-16 w-auto" src="./asset/logo.png" alt="Your Company">
+      <h2 class="mt-6 text-center text-2xl font-bold leading-9 tracking-tight text-purple-900">CityShine Waste Management For User</h2>
+      <h2 class="mt-8 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Sign in to your account</h2>
     </div>
 
-    <!-- hero -->
-    <div class="h-[1vh] bg-gradient-to-t from-[gray] to-[white]"></div>
-    <div class="bg-gradient-to-t from-[#b0d7ee] to-[white]">
-      <img
-        src="./asset/Slide3.jpg"
-        alt=""
-        class="md:h-[75%] Md:w-[85%] xl:h-[80vh] 2xl:h-[75vh] md:p-0 p-1 h-auto w-[95%]"
-        style="display: block; margin-left: auto; margin-right: auto"
-      />
-    </div>
-    <!-- carousel -->
-   
-    
-    
-  <!-- book online -->
-    <div class="h-full  bg-gray-200 flex justify-center items-center md:flex-row flex-col box-content  object-cover xl:gap-20 gap-12 md:py-10 py-6  md:mt-5 mt-4 md:mx-8 mx-2 bg-cover">
-      <div class="containerbook bg-white lg:mx-16">
-        <div class="box-content object-cover">
-            <a href="#" class="flex justify-center content-center pt-8 underline text-blue-600 hover:text-blue-800 visited:text-purple-600 md:text-[120%] tracking-wide pb-1">An iso Certified Institutions</a>
-          <h1 class="flex justify-center line-clamp-3 items-center merriweather-regular tracking-wide md:text-[175%] text-[155%] md:pb-20 pb-10">
-          Are You A Student
-          </h1>
-          <h2 class="flex justify-center merriweather-light text-[86%] pb-3 text-center">
-          CBPS 12 Admission Open, Hurry Up Now!
-           </h2>
-           <div class="btn-ctr1 pb-6"><button class=" bg-[#0f155b] text-white px-6 py-2  rounded-3xl hover:bg-blue-800">Book online</button></div>
-          
+    <div class="mt-6 sm:mx-auto sm:w-full sm:max-w-sm">
+      <form id="signin-form" class="space-y-6" action="#" method="POST" onsubmit="return handleSignIn(event)">
+        <div>
+          <label for="username" class="block text-sm font-medium leading-6 text-gray-900">Username</label>
+          <div class="mt-2">
+            <input id="username" name="username" type="text" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
           </div>
         </div>
-        <div class="containerbook bg-white lg:mx-16">
-          <div class="box-content object-cover px-4">
-              <a href="#" class="flex justify-center content-center pt-8 underline text-blue-600 hover:text-blue-800 visited:text-purple-600 md:text-[120%] tracking-wide pb-1">An iso Certified Institutions</a>
-            <h1 class="flex justify-center text-center merriweather-regular tracking-wide md:text-[175%] text-[155%] md:pb-12 pb-10">
-              Are You An Educational Consultant
-            </h1>
-            <h2 class="flex justify-center merriweather-light text-[86%] pb-3 text-center">
-            CBPS 12 Admission Open, Hurry Up Now!
-             </h2>
-             <div class="btn-ctr1 pb-6"><button class=" bg-[#0f155b] text-white px-6 py-2  rounded-3xl hover:bg-blue-800">Book online</button></div>
-            
+
+        <div>
+          <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
+          <div class="mt-2">
+            <input id="email" name="email" type="email" autocomplete="email" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          </div>
+        </div>
+
+        <div>
+          <div class="flex items-center justify-between">
+            <label for="password" class="block text-sm font-medium leading-6 text-gray-900">Password</label>
+            <div class="text-sm">
+              <a href="#" class="font-semibold text-indigo-600 hover:text-indigo-500">Forgot password?</a>
             </div>
           </div>
-      
+          <div class="mt-2">
+            <input id="password" name="password" type="password" autocomplete="current-password" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          </div>
+        </div>
+
+        <div>
+          <button type="submit" class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Sign in</button>
+        </div>
+      </form>
+
+      <p class="mt-10 text-center text-sm text-gray-500">
+        Have you registered?
+        <a href="#" class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">Sign Up Now</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- User Page -->
+<section id="userpage" class="hidden" style="display: none;">
+  <header id="home" class="bg-white">
+    <nav class="flex justify-between items-center w-[92%] h-auto mx-auto">
+      <div class="h-auto overflow-hidden">
+        <!-- logo start -->
+        <img class="w-40 md:my-[-12%]" src="./asset/logo.png" alt="" />
+        <!-- logo end -->
+      </div>
+      <!-- nav bar menu start -->
+      <div class="nav-links md:static absolute bg-white md:min-h-fit min-h-[36vh] left-0 top-[-100%] md:w-auto w-full flex items-center md:px-4 md:py-0 px-6 py-2 ml-5">
+        <ul class="flex md:flex-row flex-col md:items-center md:gap-[3vw] md:text-[18px] text-[16px] gap-3 md:font-serif font-medium">
+          <li class="relative group flex justify-end bg-slate-500 rounded-lg md:hidden"
+          >
+            <span class="md:mx-3">
+              <i class="fa-solid fa-user"></i>
+              <span id="username-display" class="ml-2 text-gray-200"></span>
+            </span>
+          </li>
+          <li>
+            <a class="hover:text-gray-500" href="#home">HOME</a>
+          </li>
+          <li>
+            <a class="hover:text-gray-500" href="#About">ABOUT</a>
+          </li>
+          <li class="relative group">
+            <a class="hover:text-gray-500" href="#Complaints">COMPLAINTS</a>
+            <!-- Dropdown menu -->
+           <ul class="absolute left-0 top-full bg-white shadow-md mt-1 hidden md:group-hover:block z-50">
+            <li class="px-4 py-2 hover:bg-gray-100">
+              <a id="newComplaintLinkxl" href="#newComplaint" class="block text-gray-700 cursor-pointer">New Complaints</a>
+            </li>
+            <li class="px-4 py-2 hover:bg-gray-100">
+              <a  id="updateComplaintLinkxl" href="#updateComplaint" class="block text-gray-700 cursor-pointer">Update Complaints</a>
+            </li>
+           </ul>
+          </li>
+          <li>
+            <a class="hover:text-gray-500" href="#contact">CONTACT</a>
+          </li>
+          <li class="relative group">
+            <a class="hover:text-gray-500" id="logout-button" href="#">
+              LOGOUT
+            </a>
+          </li>
+          <li class="relative group flex justify-end bg-slate-500 rounded-lg "
+          >
+            <span class="md:mx-3">
+              <i class="fa-solid fa-user"></i>
+              <span id="username-displayxl" class="ml-2 text-gray-200"></span>
+            </span>
+          </li>
+        </ul>
+      </div><!-- nav bar menu end -->
+
+      <!-- menu bar logo -->
+      <div class="flex items-center gap-2 ">
+        <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+      </div>
+    </nav>
+  </header>
+
+  <!-- complaint new and update  -->
+<div class="bg-black text-white flex justify-between items-center h-10 md:hidden">
+  <a id="newComplaintLink" href="#newComplaint" class="bg-purple-950 w-[49.8%] text-center h-12 pt-2 text-[18px] hover:text-gray-300">New Issue</a>
+  <a id="updateComplaintLink" href="#updateComplaint" class="bg-purple-950 w-[49.8%] text-center h-12 pt-2 text-[18px] hover:text-gray-300">Update Issue</a>
+</div> 
+
+  <!-- hero -->
+  <div class="h-[1vh] bg-gradient-to-t from-[black] to-[black]"></div>
+  <section id="slider" class="relative overflow-hidden w-full h-auto">
+    <!-- Slide Container -->
+    <div id="slide-container" class="flex transition-transform duration-500 ease-in-out w-full">
+      <!-- Slide 1 -->
+      <div class="slide flex-shrink-0 w-full h-auto bg-gradient-to-t from-[#b0d7ee] to-[white]">
+        <img src="./asset/Slide3.png" alt="Slide 1" class="md:h-[75%] md:w-[85%] xl:h-[80vh] 2xl:h-[75vh] md:p-0 p-1 h-auto w-[95%] mx-auto" />
+      </div>
+      <!-- Slide 2 -->
+      <div class="slide flex-shrink-0 w-full h-auto bg-gradient-to-t from-[#b0d7ee] to-[white]">
+        <img src="./asset/Slide4.png" alt="Slide 2" class="md:h-[75%] md:w-[85%] xl:h-[80vh] 2xl:h-[75vh] md:p-0 p-1 h-auto w-[95%] mx-auto" />
+      </div>
     </div>
 
+    <!-- Navigation Buttons -->
+    <button onclick="previousSlide()" class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white text-gray-400 md:px-4 md:py-2 px-2 py-1 rounded-full shadow-lg">
+      &lt;
+    </button>
+    <button onclick="nextSlide()" class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white text-gray-400 md:px-4 md:py-2 px-2 py-1 rounded-full shadow-lg">
+      &gt;
+    </button>
 
-    <!-- desc -->
-    <section class="bg-gradient-to-t from-[#b7dde7] to-[white]">
-      <!-- About -->
-      <div id="About" class="md:h-[102vh] h-auto md:mx-14 grid md:grid-cols-2 md:overflow-hidden">
-        <div class="md:p-10 p-4 md:h-[100vh] h-auto">
+    <!-- Indicators -->
+    <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+      <div onclick="goToSlide(0)" class="indicator md:w-4 md:h-4 w-2 h-2 bg-gray-400 rounded-full cursor-pointer"></div>
+      <div onclick="goToSlide(1)" class="indicator md:w-4 md:h-4 w-2 h-2 bg-gray-400 rounded-full cursor-pointer"></div>
+    </div>
+  </section>
+  <!-- Hero slider end -->      
+      
+    
+      <!-- desc -->
+      <section class="bg-gradient-to-t from-[#b7dde7] to-[white]">
+        <!-- About -->
+<div id="About" class="md:h-[102vh] h-auto md:mx-14 grid md:grid-cols-2 md:overflow-hidden">
+  <div class="md:p-10 p-4 md:h-[100vh] h-auto">
+    <h1 class="pt-10 md:pt-6 text-center md:text-left md:text-[220%] sm:text-[150%]" style="font-weight: bolder">
+      About Us
+    </h1>
+    <h2 class="text-center font-extralight md:text-left md:text-[120%] text-[150%] pt-6 pb-6">
+      CityShine: Comprehensive Waste Management Solutions for People
+    </h2>
+    <p class="md:text-[100%] text-[100%] leading-6 break-words">
+      CityShine is dedicated to transforming urban cleanliness and waste management. Founded to address the growing need for efficient waste disposal and management in cities, CityShine aims to revolutionize how citizens interact with and manage their waste.
+    </p>
+
+    <p class="pt-4 md:text-[100%] text-[100%] leading-6">
+      CityShine is committed to making waste management hassle-free and efficient. Our platform is designed to cater to everyone, from busy professionals to concerned residents, ensuring that managing waste is no longer a daunting task. By choosing CityShine, you are contributing to a cleaner, healthier, and more sustainable city.CityShine offers a wide range of services tailored to meet the diverse needs of urban residents.
+    </p>
+
+    <p class="pt-6 md:pt-8 md:text-[100%] text-[100%] leading-6">
+      CityShine’s mission is to provide residents with a seamless and effective waste management system. We understand the challenges urban areas face with waste management and <span class="md:hidden">strive to offer solutions that are both user-friendly and environmentally conscious. Our primary objective is to make cities cleaner, greener, and more sustainable through innovative waste management practices.</span>
+    </p>
+  </div>
+
+  <!-- Project Image -->
+  <div class="flex justify-center xl:h-auto h-auto overflow-hidden content-center md:mt-14 md:pt-0">
+    <img src="./asset/CleanCityimg.jpg" alt="CityShine Image" class="responsive-image md:my-auto my-8 md:px-0 px-10">
+  </div>
+</div>
+        <!-- who we are -->
+        <section class="h-auto md:mx-14 md:p-10 p-6">
           <h1
-            class="pt-10 md:pt-6 text-center md:text-left md:text-[220%] sm:text-[150%]"
+            class="md:pt-10 text-center md:text-[250%] text-[150%]"
             style="font-weight: bolder"
           >
-            About Us
+            Who We Are?
           </h1>
-          <h2
-            class="text-center font-extralight md:text-left md:text-[120%] text-[150%] pt-6 pb-6"
+          <p
+            class="md:text-[100%] text-[100%] pt-6 md:leading-7 leading-6 break-all"
           >
-            Student Support Services and Assistance
+          CityShine is a trailblazer in urban waste management solutions, dedicated to revolutionizing how cities manage and dispose of waste. Our mission is to create cleaner, greener, and more sustainable urban environments through innovative and efficient waste management practices. Backed by a team of experienced professionals with extensive expertise in environmental management, CityShine is at the forefront of ensuring urban cleanliness and sustainability.
+          </p>
+          <p class="md:text-[100%] text-[100%] pt-4 md:leading-7 leading-6">
+            Choosing CityShine means partnering with a dedicated team committed to making urban living cleaner and more sustainable. Our innovative approach to waste management ensures that cities are not only cleaner but also healthier places to live. By focusing on user-friendly solutions and community engagement, CityShine is leading the way in urban waste management.
+          </p>
+          <ul
+            class="right-sign pl-5 text-[100%] pt-2 md:leading-5 leading-6 font-medium tracking-[0.1em]"
+          >
+            <li>Dedicated Team Commitment</li>
+            <li>Sustainable Waste Management</li>
+            <li>User-Friendly Solutions</li>
+          </ul>
+  
+          <h2 class="font-bold md:text-[120%] text-[100%] tracking-[0.25em] pt-6">
+            <span class="text-yellow-600">[</span> Our Core Services
+            : CityShine provides a wide range of services<span class="text-yellow-600">]</span>
           </h2>
-          <p class="md:text-[100%] text-[100%] leading-6 break-words">
-            CBPS Academy Rourkela
-            <a href="#" class="font-semibold text-[#140978]"> ISO Certified</a>
-            independent career counselling centres at the suburb of Rourkela,
-            incepted from the year 2014 the primary objective of cbps academy
-            Rourkela is to emerge as a career counselling centre to understand
-            the needs of the students who want to pursue the career with proper
-            planning and execution. Education is one of the most unplanned
-            activities today, however, some career counselling centres brought
-            changes in this field by motivating students to pursue the right
-            career and courses with careful planning and execution.
+          <ul
+            class="right-sign p-5 md:text-[100%] text-[100%] pt-4 md:leading-5 leading-6 font-medium tracking-[0.1em]"
+          >
+            <li>Households and Residential Areas</li>
+            <li>Commercial Establishments</li>
+            <li>Public Spacess</li>
+          </ul>
+  
+          <h2 class="font-bold md:text-[120%] tracking-[0.25em] pt-6">
+            Our Key Functions
+          </h2>
+          <ul
+            class="right-sign pl-5 md:text-[100%] text-[100%] pt-4 md:leading-5 leading-6 font-medium tracking-[0.1em]"
+          >
+            <li>
+              User Support and Assistance - educational resources on waste segregation and recycling
+            </li>
+            <li>
+              Customized Solutions - personalized waste management solutions
+            </li>
+            <li>Community Engagement - collective effort to achieve a cleaner urban environment.</li>
+            
+          </ul>
+  
+          <h2 class="font-bold md:text-[120%] tracking-[0.25em] pt-8">
+            Modes of Operation:
+          </h2>
+          <p
+            class="md:text-[100%] text-[100%] pt-4 md:leading-7 leading-6 tracking-wide"
+          >
+          CityShine offers flexible modes of operation to cater to different needs: Regular Mode - For areas requiring daily waste collection and management and On-Demand Mode - For locations that need waste management services on a less frequent, as-needed basis.
           </p>
-
-          <p class="pt-4 md:text-[100%] text-[100%] leading-6">
-            CBPS Academy Rourkela is successful in this effort by motivating
-            students in completing their incomplete education. We at CBPS
-            Academy Rourkela made it possible to understand the needs of dropped
-            and discontinued students. We also help Housewives, Working
-            professionals in understanding their educational needs and
-            accordingly help in choosing the right kind of courses to help them
-            have a Bright career ahead.
-          </p>
-
-          <p class="pt-6 md:pt-8 md:text-[100%] text-[100%] leading-6">
-            Our Services are customized and suitable for different students, we <span class="md:hidden">understand different needs of the different students and accordingly
-              help them in choosing the courses and we ensure in their journey
-              from admission to examinations.</span>
-          </p>
-        </div>
-        <div
-          class="flex justify-center xl:h-auto h-auto overflow-hidden content-center md:mt-20 md:pt-0"
-        >
-          <img
-            src="./asset/college_student.jpg"
-            alt="students_img"
-            class="md:px-10 md:py-10 md:h-[100%] h-auto px-6 mx-auto md:my-auto my-8"
-            style="border-radius: 16%"
-          />
-        </div>
-      </div>
-      <!-- who we are -->
-      <section class="h-auto md:mx-14 md:p-10 p-6">
-        <h1
-          class="md:pt-10 text-center md:text-[250%] text-[150%]"
-          style="font-weight: bolder"
-        >
-          Who We Are?
-        </h1>
-        <p
-          class="md:text-[100%] text-[100%] pt-6 md:leading-7 leading-6 break-all"
-        >
-          Cbps Academy Rourkela is one of the oldest Educational consulting and
-          Career Guidance Center. Backed with Well Qualified Professionals, Who
-          have immense Experience in Academic domain in the felids of Career
-          Guidance, Academic Consulting and Student services. It is well lead by
-          domain specialists. We are Govt approved Enterprise Registered with
-          <span class="font-bold">MSME</span> (Ministry of Micro, Small & Medium
-          Enterprises) Bearing Registration No -
-        </p>
-        <p class="md:text-[100%] text-[100%] pt-4 md:leading-7 leading-6">
-          At Cbps Academy Rourkela We undertake some important academic
-          functions which are very essential in selecting the Right Subjects
-          along with Right Boards or universities. Our Basic function is to
-          focus on following students :
-        </p>
-        <ul
-          class="right-sign pl-5 text-[100%] pt-2 md:leading-5 leading-6 font-medium tracking-[0.1em]"
-        >
-          <li>Dropped and Discontinued Students</li>
-          <li>House wives</li>
-          <li>Working Professionals</li>
-        </ul>
-
-        <h2 class="font-bold md:text-[120%] text-[100%] tracking-[0.25em] pt-6">
-          <span class="text-yellow-600">[</span> Our Basic Functions Includes
-          Student Support Functions They Include:
-          <span class="text-yellow-600">]</span>
-        </h2>
-        <ul
-          class="right-sign p-5 md:text-[100%] text-[100%] pt-4 md:leading-5 leading-6 font-medium tracking-[0.1em]"
-        >
-          <li>Admission or Registration support in Boards and Universities</li>
-          <li>Guidance on Course ware and Syllabus</li>
-          <li>Examination Preparatory Materials</li>
-          <li>Guidance on Practical's</li>
-        </ul>
-
-        <h2 class="font-bold md:text-[120%] tracking-[0.25em] pt-6">
-          Our Core Areas Of Courses :
-        </h2>
-        <ul
-          class="right-sign pl-5 md:text-[100%] text-[100%] pt-4 md:leading-5 leading-6 font-medium tracking-[0.1em]"
-        >
-          <li>
-            CLASS X - For Dropped Students from Open Schools like CBPS, NIOS
-          </li>
-          <li>
-            CLASS XII - For Dropped Students from Open Schools like CBPS, COBSE,
-            CG SOS, BBOSE
-          </li>
-          <li>Graduation Courses - BA, BCOM, BSC, BBA, BCA, BSW</li>
-          <li>Post-Graduation Courses - MA, MCOM, MSC, MBA, MCA, MSW</li>
-          <li>
-            Technical Courses - DIPLOMA (All trades Civil, Mechanical,
-            Electcicals, CS, IT)
-          </li>
-          <li>
-            B.Tech Courses - BTECH (Mechanical, Electricals, Computer Science,
-            IT)
-          </li>
-        </ul>
-
-        <h2 class="font-bold md:text-[120%] tracking-[0.25em] pt-8">
-          Distance Mode/Regular Mode:
-        </h2>
-        <p
-          class="md:text-[100%] text-[100%] pt-4 md:leading-7 leading-6 tracking-wide"
-        >
-          At CBPS Academy Rourkela we understand the need of the students and
-          based on the need and requirements we help the students in choosing
-          the Mode of courses (Regular Mode/Distance Mode)
-        </p>
+        </section>
       </section>
-    </section>
-    <!-- courses we offer -->
-    <section id="services" class="bg-gradient-to-t from-[#dce7ea] to-[white]">
-      <div class="coursesdg flex justify-center items-center pt-10"><h1 class="md:text-[250%] text-[150%] font-extrabold tracking-wider">Courses We Offer </h1></div>
+     <!-- complaint form start -->
+<section id="Complaints" class="bg-gradient-to-t from-[#dce7ea] to-[white]">
+  <div class="coursesdg flex justify-center items-center pt-10">
+    <h1 class="md:text-[250%] text-[150%] font-extrabold tracking-wider">Complaints Services</h1>
+  </div>
 
-      <div class="flex justify-center items-center md:pt-10 pt-7 h-auto mx-auto">
-        <ul class="grid md:grid-cols-2 grid-rows-1  md:gap-36">
-          <li><img src="./asset/classroom.jpg" alt="image" class="rounded md:h-[100%] md:mx-0 h-[95%] mx-auto"></li>
-          <li><img src="./asset/classroom_withTeacher.jpg" alt="image" class="rounded hidden sm:block"></li>
-        </ul>
-      </div>
-      <!-- courses details -->
-      <!-- container 1 -->
-      <div class="">
-        <div class="flex justify-center items-center md:flex-row flex-col gap-8 pt-10 md:px-28 px-4">
-          <div class="container container1 px-4 overflow-hidden">
-            <h1 class="font-extrabold pt-[10px] flex justify-center items-center text-center md:text-[140%] text-[120%] tracking-wider">CLASS X</h1>
-            <h2 class="font-bold pt-3 md:tracking-wider tracking-wide md:text-[100%] text-[90%]">Are you a Discontinued Student?
-            </h2>
-            <h2 class="font-bold pt-3 md:tracking-wider tracking-wide md:text-[100%] text-[90%]">Are You a Dropped Student?</h2>
-            <h2 class="font-bold pt-3 md:tracking-wider tracking-wide md:text-[100%] text-[90%]">Do you want to improve your Class X Grades?</h2>
-            <p class="md:text-[100%] text-[90%] roboto-regular md:pt-6 pt-3 tracking-wide md:leading-6 text-justify">You can contact our counselling center for enrollment in Class X or Matriculation from Open schooling system like Nios (National Institute of Open Schooling) , BBOSE (Bihar Board of Open Schooling Patna) BOSSE (Board of Open Schooling and Skill Education), the certificates issued by these Boards are equivalent to CBSE, ICSE, And IGCSE, and OR State Boards.</p>
-            <p class="md:text-[100%] text-[90%] roboto-regular md:pt-6 pt-3 tracking-wide md:leading-6 text-justify">The above are most reputed open schools in India We at cbps Academy Rourkela help you in completing Class X or Matriculation.
-            </p>
-            <h2 class="pt-2 md:tracking-wider tracking-wide  md:text-[100%] text-[90%]"><span class="font-bold">Visit us today or Call or Email us at</span> <span class="text-[#de1bc4]"> 9078678382</span> or <span class="text-[#de1bc4]">cbpsrourkela@gmail.com</span></h2>
-            <h2 class="font-bold pt-2 md:tracking-wider tracking-wide md:text-[100%] text-[90%]">Documents Required for Enrollment in Class X</h2>
-            <ul class="roboto-regular leading-7 list-disc pl-4 md:pb-2 pb-4">
-              <li class="">Aadhar</li>
-              <li class="">Birth Certificate</li>
-              <li class="">TC Issued from Last class</li>
-            </ul>
-          </div>
-          <div class="container container1 px-4 overflow-hidden">
-            <h1 class="font-extrabold pt-[10px] flex justify-center items-center text-center md:text-[140%] text-[120%] tracking-wider">CLASS XII</h1>
-            <h2 class="font-bold pt-3 md:tracking-wider tracking-wide md:text-[100%] text-[90%]">Are you a Discontinued Student?
-            </h2>
-            <h2 class="font-bold pt-3 md:tracking-wider tracking-wide  md:text-[100%] text-[90%]">Are You a Dropped Student?</h2>
-            <h2 class="font-bold pt-3 md:tracking-wider tracking-wide  md:text-[100%] text-[90%]">Do you want to improve your Class XII Grades?</h2>
-            <p class="md:text-[100%] text-[90%] roboto-regular md:pt-6 pt-3 tracking-wide md:leading-6 text-justify">You can contact our counselling center for enrollment in Class X or Matriculation from Open schooling system like Nios (National Institute of Open Schooling) BBOSE (Bihar Board of Open Schooling Patna) BOSSE (Board of Open Schooling and Skill Education), the certificates issued by these Boards are equivalent to CBSE, ICSE, And IGCSE, and OR State Boards..</p>
-            <p class="md:text-[100%] text-[90%] roboto-regular md:pt-6 pt-3 tracking-wide md:leading-6 text-justify">The above are most reputed open schools in India We at Cbps Academy Rourkela help you in completing Class X or Matriculation.
-            </p>
-            <h2 class="pt-2 md:tracking-wider tracking-wide  md:text-[100%] text-[90%]"><span class="font-bold">Visit us today or Call us or Email at</span> <span class="text-[#de1bc4]"> 9078678382</span> or <span class="text-[#de1bc4]">cbpsrourkela@gmail.com</span></h2>
-            <h2 class="font-bold pt-2md:tracking-wider tracking-wide  md:text-[100%] text-[90%]">Documents Required for Enrollment in Class X</h2>
-            <ul class="roboto-regular leading-7 list-disc pl-4 md:pb-2 pb-4">
-              <li class="">Aadhar</li>
-              <li class="">Birth Certificate</li>
-              <li class="">Class X Mark sheet/Certificate</li>
-              <li class="">TC issued from Class X</li>
-          </div>
-        </div>
+  <div class="flex justify-center items-center md:pt-8 pt-7 h-auto mx-auto md:px-5">
+    <ul class="grid md:grid-cols-2 grid-rows-1  md:gap-20">
+      <li><img src="./asset/Service1img.jpg" alt="image" class="rounded md:h-[100%] md:mx-0 h-[95%] mx-auto"></li>
+      <li><img src="./asset/service2img.jpg" alt="image" class="rounded hidden sm:block"></li>
+    </ul>
+  </div>
+</section>
 
-        <!-- container2 -->
-        <div class="flex justify-center items-center md:flex-row flex-col gap-8 pt-10 md:px-28 px-4">
-          <div class="container container2 px-4 overflow-hidden">
-            <h1 class="font-extrabold pt-[10px] flex justify-center items-center text-center md:text-[140%] text-[120%] tracking-wider">ARTS & HUMANITIES</h1>
-            <p class="roboto-regular md:text-[100%] text-[100%] font-light md:pt-4 pt-3 tracking-wide md:leading-6 text-justify">Some of the Most Popular Conventional courses in Arts and Humanities offered by various Universities through Distance/Regular Mode Student can enroll in various specializations like:</p>
-            <ul class="roboto-regular leading-7 list-disc pl-4 md:pb-2 pb-4 pt-6">
-              <li class=""><span class="font-bold ">BA (Bachelors in Arts) : </span>Psychology, Economics, Political science, Sociology.</li>
-              <li class=""><span class="font-bold">MA (Masters in Arts) : </span>Psychology, Economics, Political science, Sociology.</li>
-            </ul>
-          </div>
-          <div class="container container2 px-4 overflow-hidden">
-            <h1 class="font-extrabold pt-[10px] flex justify-center items-center text-center md:text-[140%] text-[120%] tracking-wider">SCHOOL OF SCIENCE</h1>
-            <p class="md:text-[100%] text-[100%] roboto-regular md:pt-4 pt-3 tracking-wide md:leading-6 text-justify">Science refers to a system of acquiring knowledge based on scientific method. It is also an organized body of knowledge which has been gained through research. Its objective is to make human learn that how things work. Science has become an integral part of human life as it fulfills our day to day requirements. We at Nios Academy Rourkela  offer B.SC, M.SC and Ph.D. courses in various science subjects.</p>
-            <ul class="roboto-regular leading-6 list-disc pl-4 md:pb-2 pb-4 pt-3 font-bold">
-              <li>B.Sc</li>
-              <li>M.Sc</li>
-              <li>Doctor of Philosophys</li>
-            </ul>
-          </div>
+<!-- New Complaint Form -->
+<section id="newComplaint" class="pt-5">
+  <h1 class="flex justify-center mx-auto text-purple-800 font-bold md:text-[150%] md:pt-10 md:pb-10 pt-5 pb-5">New Complaint</h1>
+  <div class="w-full md:w-[70%] md:max-w-full mx-auto md:pt-6">
+    <div class="p-6 border border-gray-300 sm:rounded-md">
+      <form id="newComplaintForm">
+        <label class="block mb-6">
+          <span class="text-gray-700">Your name</span>
+          <input name="name" type="text" class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" placeholder="full name" required />
+        </label>
+        <label class="block mb-6">
+          <span class="text-gray-700">Email address</span>
+          <input name="email" type="email" class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" placeholder="xxxx@example.com" required />
+        </label>
+        <label class="block mb-6">
+          <span class="text-gray-700">Address</span>
+          <input name="address" type="text" class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" placeholder="street address" required />
+        </label>
+        <label class="block mb-6">
+          <span class="text-gray-700">Proof</span>
+          <input name="proof" type="file" class="block w-full mt-1 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required />
+        </label>
+        <label class="block mb-6">
+          <span class="text-gray-700">What's wrong?</span>
+          <textarea name="message" class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" rows="3" placeholder="Please describe your problem" required></textarea>
+        </label>
+        <div class="mb-6">
+          <button type="submit" class="h-10 px-5 text-indigo-100 bg-indigo-700 rounded-lg transition-colors focus:shadow-outline hover:bg-indigo-800">Submit</button>
+          <button id="gotoUpdate" class="h-10 px-5 text-indigo-100 bg-indigo-700 rounded-lg transition-colors focus:shadow-outline hover:bg-indigo-800">Fill Update</button>
         </div>
-
-        <!-- container 3 -->
-        <div class="flex justify-center items-center md:flex-row flex-col gap-8 pt-10 md:px-28 px-4">
-          <div class="container container3 px-4 overflow-hidden">
-            <h1 class="text-center flex justify-center items-center font-extrabold pt-[10px]  md:text-[140%] text-[120%] tracking-wider">COMMERCE & MANAGEMENT</h1>
-            <p class="md:text-[100%] text-[100%] roboto-regular md:pt-4 pt-3 tracking-wide md:leading-6 text-justify">University programs in Commerce and Management in Both Regular and Distance mode are</p>
-            <ul class="leading-7 list-disc pl-4 md:pb-2 pb-4 pt-6 roboto-regular">
-              <li class="">Bachelor of Business Administration (BBA)</li>
-              <li class="">Bachelor of Commerce (B. Com)</li>
-              <li class="">Master's Degree and diploma in Business Administration (MBA)</li>
-            </ul>
-          </div>
-          <div class="container container3 px-4 overflow-hidden">
-            <h1 class="font-extrabold pt-[10px] flex justify-center items-center text-center md:text-[140%] text-[120%] tracking-wider">COMPUTER APPLICATION & IT</h1>
-            <p class="md:text-[100%] text-[100%] roboto-regular md:pt-4 pt-3 tracking-wide md:leading-6 text-justify">SIn computer science, the term, 'information' refers usually to information that is encoded in bits and bytes in computer memory. Courses offered are BCA, MCA, DCA, and PGDCA in Both Regular and Distance modes.</p>
-            <ul class="leading-6 list-disc pl-4 md:pb-2 pb-4 pt-3 roboto-regular">
-              <li>DCA</li>
-              <li>BCA</li>
-              <li>MCA</li>
-              <li>BSc. Computer Science</li>
-              <li>PGDCA</li>
-            </ul>
-          </div>
-        </div>
-        <!-- ending paragraph -->
-        <div class="flex justify-center content-center pt-4 pb-10 md:text-[110%] text-[100%%] roboto-regular md:pt-6 tracking-wide md:leading-6 md:px-28 px-4 text-justify">
-          <p>To enable the students in cracking these board examinations we help the students from the beginning of Admissions to examinations with personalized care/Guidance and Mentoring.</p>
-        </div>
-      </div>
-      <!-- Examination Guidance -->
-      <div class="">
-        <div class="coursesdg  text-center flex justify-center items-center mx-auto pt-10"><h1 class="md:text-[250%] text-[120%] font-extrabold tracking-wider">Examination Guidance </h1></div>
-      </div>
-        <!-- contains -->
-      <div class="flex md:flex-row flex-col-reverse justify-center content-center md:gap-10 gap-4 md:pt-10 pt-7 mx-auto md:px-40 px-4 pb-10">
-        <div class="block justify-center content-center box-content md:h-[400px] h-auto md:w-[50%] w-auto object-cover pl-4 pr-4">
-          <p class="roboto-regular tracking-wide md:leading-6 text-justify">
-            Working Professionals always find it difficult to complete their education while working, yet they want to complete their education, we help both fresh and working professionals in completing their education from Various distance mode courses approved by UGC, and DEB Universities. Our Academic Partnership with reputed Universities Makes it Possible to Spread Educational Services and help Students in Pursuing their Dreams.
-          </p>
-          <div class="btn-ctr">
-            <button class=" bg-[#129cd2] text-white mt-6 px-6 py-2  rounded-3xl">Click Here...</button>
-          </div>
-
-        </div>
-        <div class="flex justify-center content-center box-content bg-white md:h-[400px] md:w-[50%] h-auto w-auto">
-          <img src="./asset/Slider-Image.png" alt="" class="">
-        </div>
-
-      </div>
-    </section>
-
-    <!-- test -->
-    <div class="h-auto pt-11 pb-10 flex justify-center content-center ">
-      <h1 class="bg-blue-900 text-white">working is going on</h1>
+      </form>
     </div>
-    <!-- Back to top bottom-->
-    <a href="#home" class="to-top">
-      <i class="fa-solid fa-arrow-up"></i></a>
-    
-    <!-- main.js -->
-    <script src="./main.js"></script>
-  </body>
-</html>
+  </div>
+</section>
+
+<!-- Update Complaint Form -->
+<section id="updateComplaint" class="pt-5 hidden">
+  <h1 class="flex justify-center mx-auto text-purple-800 font-bold md:text-[150%] md:pt-10 md:pb-10 pt-5 pb-5">Update Complaint</h1>
+  <div class="w-full md:w-[70%] md:max-w-full mx-auto md:pt-6">
+    <div class="p-6 border border-gray-300 sm:rounded-md">
+      <form id="updateComplaintForm">
+        <label class="block mb-6">
+          <span class="text-gray-700">Issue Reference No.</span>
+          <input name="referenceNo" type="text" class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" placeholder="reference number" required />
+        </label>
+        <label class="block mb-6">
+          <span class="text-gray-700">Address</span>
+          <input name="address" type="text" class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" placeholder="street address" required />
+        </label>
+        <label class="block mb-6">
+          <span class="text-gray-700">Proof</span>
+          <input name="proof" type="file" class="block w-full mt-1 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required />
+        </label>
+        <label class="block mb-6">
+          <span class="text-gray-700">Update about your issue?</span>
+          <textarea name="message" class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" rows="3" placeholder="Please describe your update" required></textarea>
+        </label>
+        <div class="mb-6">
+          <button type="submit" class="h-10 px-5 text-indigo-100 bg-indigo-700 rounded-lg transition-colors focus:shadow-outline hover:bg-indigo-800">Update</button>
+          <button id="gotoNew" class="h-10 px-5 text-indigo-100 bg-indigo-700 rounded-lg transition-colors focus:shadow-outline hover:bg-indigo-800">Fill New</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+      <!-- Back to top bottom-->
+      <a href="#home" class="to-top">
+        <i class="fa-solid fa-arrow-up"></i></a>
+      
+      <!-- main.js -->
+      <script src="./main.js"></script>
+    </body>
+  </html>
+  
